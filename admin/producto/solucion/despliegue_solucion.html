@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<div class="row mt-2 justify-content-center">
+    <div id="divDetalle" class="col-3">
+        <div class="card card-detalle">
+            <div class="card-header text-center">
+                <label style="font-weight: bold;">DETALLES SOLUCI&Oacute;N</label>
+                <span>
+                    <a class="optica_closable_action" href="#" onclick="cm.setDetalleVisible(false);" >
+                        <span class="equis"><i class="fas fa-times"></i></span>
+                    </a>
+                </span>
+            </div>
+
+
+            <div class="card-body cuerpo">
+                <div class="form">
+                    <div class="row text-center justify-content-center inputs">
+                        <label>IDProducto:</label>
+                        <input id="txtIdProducto" type="text" class="inp" disabled>
+                        <label class="label-inp">ID Soluci&oacute;n</label>
+                        <input id="txtIdSolucion" type="text" class="inp" disabled>
+                        <label class="label-inp">N&uacute;mero &Uacute;nico:</label>
+                        <input id="txtNumeroUnico" type="text" class="inp" disabled>
+                        <label class="label-inp">Nombre:</label>
+                        <input id="txtNombre" type="text" class="inp">
+                        <label class="label-inp">Marca:</label>
+                        <input id="txtMarca" type="text" class="inp">
+                        <label class="label-inp">Descripci&oacute;n</label>
+                        <input id="txtDescripcion" type="text" class="inp">
+                        <label class="label-inp">Precio Compra:</label>
+                        <input id="txtPrecioC" type="text" class="inp">
+                        <label class="label-inp">Precio Venta:</label>
+                        <input id="txtPrecioV" type="text" class="inp">
+                        <label class="label-inp">Existencias:</label>
+                        <input id="txtExistencias" type="text" class="inp">
+                    </div>
+                    <div class="my-2 text-center">
+                        <button class="btn btn-outline-success btnguardar" onclick="cm.save(); alertarGuardarRegistro();"><i class="fas fa-save" ></i>&nbsp;&nbsp;Guardar</button>
+                        <button class="btn btn-outline-secondary btncancelar mt-2" onclick="cm.setDetalleVisible(false);"><i class="fas fa-trash"></i>&nbsp;Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-7">
+        <!-- COMIENZA DETALLES ACCESORIO -->
+
+        <div id="divCatalogo" class="d-flex justify-content-end">
+            <div class="bar-bq">
+                <input type="text" id="barrabq">
+                <button class="btn-search"><i class="fas fa-circle fa-search fa-1x"></i></button>
+            </div>
+
+            <div class="card fondo_table">
+                <div class="card-header titulo_tabla">
+                    Listado de soluciones
+                    <button class="btn btn-sm btn-outline-dark align-content-end float-start" 
+                            onclick="cm.setDetalleVisible(true);">
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp;Agregar
+                    </button>
+                </div>
+                <div class="card-body outer-wrapper1">
+                    <div class="table-wrapper">
+                    <table id="tblAccesorios" class="table table-hover tabla_despliegue">
+                        <thead class="text-center tabla-encabezado">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Marca</th>
+                                <th>Descripci&oacute;n</th>
+                                <th>Precio Compra</th>
+                                <th>Precio Venta</th>
+                                <th>Existencias</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyClientes" class="tabla-cuerpo"></tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/solucion.js"></script>
+<script src="../js/main.js"></script>
