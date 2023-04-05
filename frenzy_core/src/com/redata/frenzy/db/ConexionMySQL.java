@@ -7,13 +7,9 @@ public class ConexionMySQL {
     Connection conn;
     
     public Connection open(){
-        String user = "root";
-        String password = "root";
-        String url = "jdbc:mysql://127.0.0.1:3306/frenzy?" +
-                     "useSSL=false&" +
-                     "allowPublicKeyRetrieval=true&" +
-                     "useUnicode=true&" +
-                     "characterEncoding=utf-8";
+        String user = "u2p9cdyt1if5zknd";
+        String password = "51EZJZFh4siMNUTeNmk4";
+        String url = "jdbc:mysql://u2p9cdyt1if5zknd:51EZJZFh4siMNUTeNmk4@bauyhjrizdpc3kqw4pcm-mysql.services.clever-cloud.com:3306/bauyhjrizdpc3kqw4pcm";
         try
         {
             Class.forName("com.mysql.cj.jdbc.Driver");
