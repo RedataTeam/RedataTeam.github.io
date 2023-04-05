@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="primerApellido">Apellido Paterno</label>
+            <input type="text" id="primerApellido">
+            <br>
+            <label for="segundoApellido">Apellido Materno</label>
+            <input type="text" id="segundoApellido">
+            <br>
+            <label for="fechaNacimiento">Fecha Nacimiento</label>
+            <input type="text" id="fechaNacimiento">
+            <br>
+            <label for="identificacion">Identificacion</label>
+            <input type="file" id="identificacion" accept="image/png, image/jpeg">
+            <br>
+            <label for="telMovil">Numero de Telefono</label>
+            <input type="text" id="telMovil">
+            <br>
+            <label for="email">Correo electronico</label>
+            <input type="text" id="email">
+            <br>
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad">
+            <br>
+            <label for="estado">Estado</label>
+            <input type="text" id="estado">
+            <br>
+            <label for="fotografia">Foto de perfil</label>
+            <input type="file" name="foto" id="fotografia" accept="image/png, image/jpeg">
+            <br>
+            <label for="nombreUsuario">Nombre de usuario</label>
+            <input type="text" id="nombreUsuario">
+            <br>
+            <label for="contrasenia">Contraseña</label>
+            <input type="text" id="contrasenia">
+            <br>
+            <img id="imgFoto" src="" alt="">
+            <br>
+            <br>
+            <button type="button" onclick="getBase64();">foto</button>
+            <button type="button" onclick="save();">Registrar</button>
+            
+        </div>
+        <script src="admin/js/usuario.js"></script>
+    </body>
+</html>
