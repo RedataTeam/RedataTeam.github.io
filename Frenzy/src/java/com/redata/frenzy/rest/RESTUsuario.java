@@ -46,10 +46,10 @@ public class RESTUsuario {
         return Response.status(Response.Status.OK).entity(out).build();
     }
 
-    @GET
+    @POST
     @Path("getAll")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getAll(@QueryParam("filtro") @DefaultValue("") String filtro) {
+    public Response getAll(@FormParam("filtro") @DefaultValue("") String filtro) {
         String out = null;
         ControllerUsuario cu = null;
         List<Usuario> clientes = null;
